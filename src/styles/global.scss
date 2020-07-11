@@ -8,7 +8,49 @@ body {
 * {
   margin-top: 0
 }
+body.green { 
+  --primary-color: #9984d5;
+  --primary-text-color: #fff;
+  --featured-bg: #66578d;
+  --featured-text: #fff;
+  --secondary-color: #66578d;
+  --background: #0A041A;
+  --text-color: rgba(255,255,255,0.88);
+  --text-secondary-color: rgba(255,255,255,0.66);
+  --site-header: var(--background);
+  --card-bg: #181326;
+  --card-bdr: #181326;
+  --card-shadow: #020204;
+  --btn-bg: var(--background);
+  --btn-bdr: #d3d6e7;
+  --btn-text-color: #868892;
+  --btn-hover-bg: var(--btn-bdr);
+  --btn-hover-text-color: #00062b;
+  --contact-bg: var(--card-shadow);
+  --contact-bdr: var(--card-bg);
+  --input-bg: var(--card-bg);
+}
 body.light {
+  --primary-color: #27bd59;
+  --primary-text-color: #fff;
+  --featured-bg: #493b8a;
+  --featured-text: #fff;
+  --secondary-color: #10072b;
+  --background: #fff;
+  --site-header: var(--background);
+  --card-bg: #fff;
+  --card-bdr: #eee;
+  --card-shadow: #d5d5d5;
+  --btn-bg: var(--background);
+  --btn-bdr: #d3d6e7;
+  --btn-text-color: #868892;
+  --btn-hover-bg: var(--btn-bdr);
+  --btn-hover-text-color: #00062b;
+  --contact-bg: #f7f8fe;
+  --contact-bdr: #d3d6e7;
+  --input-bg: var(--background);
+}
+body.light_green {
   --primary-color: #381696;
   --primary-text-color: #fff;
   --featured-bg: #493b8a;
@@ -29,18 +71,18 @@ body.light {
   --input-bg: var(--background);
 }
 body.dark {
-  --primary-color: #9984d5;
+  --primary-color: #27bd59;
   --primary-text-color: #fff;
   --featured-bg: #66578d;
   --featured-text: #fff;
   --secondary-color: #66578d;
-  --background: #0A041A;
+  --background: #312F2F;
   --text-color: rgba(255,255,255,0.88);
   --text-secondary-color: rgba(255,255,255,0.66);
   --site-header: var(--background);
-  --card-bg: #181326;
-  --card-bdr: #181326;
-  --card-shadow: #020204;
+  --card-bg: #1f1f1f;
+  --card-bdr: #FAF3DD;
+  --card-shadow: #141414;
   --btn-bg: var(--background);
   --btn-bdr: #d3d6e7;
   --btn-text-color: #868892;
@@ -66,11 +108,13 @@ a {
 }
 .site-wrapper {
   padding: 32px;
-  max-width: 1140px;
-  margin: 0 auto;
+  //max-width: 1140px;
+  //margin: 0 auto;
   img {
     max-width: 100%;
   }
+  margin-left: 0 ;
+  margin-right: 100;
 }
 .navigation {
   display: flex;
@@ -107,7 +151,7 @@ a {
   text-transform: uppercase;
 }
 .hero-header {
-  padding: 0 0 64px;
+  padding: 0 0 10px; // Change this to give space for banner ad in the future
   max-width: 980px;
 }
 .headline {
@@ -258,6 +302,7 @@ a {
   a {
     font-weight: 700;
   }
+  left: 32px ; right: 0; bottom: 0; 
 }
 .form-container {
   background-color: var(--contact-bg);

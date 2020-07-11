@@ -3,12 +3,11 @@ import Helmet from "react-helmet"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 
-const ContactPage = ({
+const AuthorPage = ({
   data: {
     site
   },
 }) => {
-  console.log(site);
   return (
     <Layout>
       <Helmet>
@@ -47,9 +46,9 @@ const ContactPage = ({
     </Layout>
   )
 }
-export default ContactPage
+export default AuthorPage
 export const pageQuery = graphql`
-  query ContactPageQuery{
+  query AuthorPageQuery{
     site {
       siteMetadata {
         title

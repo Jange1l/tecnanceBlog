@@ -9,6 +9,13 @@ module.exports = {
   siteMetadata: require("./site-meta-data.json"),
   plugins: [
     {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id:"GTM-T6WJ92X",
+        includeDevelopment: false,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
@@ -44,13 +51,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Delog GatbsyJS Starter`,
-        short_name: `Delog`,
+        name: `Tecnance, tech and finance for everyone`,
+        short_name: `Tecnance`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#381696`,
         display: `standalone`,
-        icon: "src/images/icon.png",
+        icon: "src/images/tecnance_logo.png",
       },
     },
     `gatsby-plugin-sass`, 
