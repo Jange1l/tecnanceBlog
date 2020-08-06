@@ -2,13 +2,22 @@ import React from "react"
 import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import {DiscussionEmbed } from 'disqus-react'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
+  pageContext
 }) {
   const { site, markdownRemark } = data // data.markdownRemark holds your post data
   const { siteMetadata } = site
   const { frontmatter, html } = markdownRemark
+
+  const disqusShortName = 'tecnance-com'
+  const disqusConfig = {
+    identifier: frontmatter.identifier,
+    title: frontmatter.title,
+    url: 'https://tecnance.com/' + frontmatter.path
+  }
   return (
     <Layout>
       <Helmet>
@@ -30,12 +39,14 @@ export default function Template({
               <div className="post-meta">{frontmatter.date}</div>
             </div>
           )}
+          
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </article>
       </div>
+      <DiscussionEmbed shortname={disqusShortName} config={disqusConfig}/>
     </Layout>
   )
 }

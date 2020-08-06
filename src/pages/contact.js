@@ -8,7 +8,6 @@ const ContactPage = ({
     site
   },
 }) => {
-  console.log(site);
   return (
     <Layout>
       <Helmet>

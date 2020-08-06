@@ -9,6 +9,33 @@ module.exports = {
   siteMetadata: require("./site-meta-data.json"),
   plugins: [
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `tecnance-com`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/assets`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id:"GTM-T6WJ92X",
