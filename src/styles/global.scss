@@ -1,4 +1,5 @@
 $font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$font-family2: "Merriweather", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 html,
 body {
@@ -187,7 +188,7 @@ a {
   }
 }
 .primary-content {
-  font-size: 18px;
+  font-size: 18pt;
   margin-bottom: 32px;
   line-height: 1.5;
   font-weight: 300;
@@ -197,6 +198,7 @@ a {
   background:var(--background);
   color: var(--text-color);
   line-height: 1.5;
+  font-size: 1.25rem;
   > .blog-post-content {
     max-width: 768px;
     margin: 0 auto;
@@ -214,6 +216,7 @@ a {
   .post-meta {
     margin-bottom: 32px;
     text-align: center;
+    
   }
   
 }
@@ -325,7 +328,7 @@ a {
     border: 1px solid var(--card-shadow);
     color: var(--text-secondary-color);
     border-radius: 6px;
-    line-height: 32px;
+    line-height: 32pt;
     padding: 6px 12px;
     width: calc(100% - 24px);
     margin-bottom: 1.5rem;
