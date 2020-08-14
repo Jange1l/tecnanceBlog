@@ -9,6 +9,13 @@ module.exports = {
   siteMetadata: require("./site-meta-data.json"),
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages-engineering`,
+        path: `${__dirname}/data_engineering`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id:"GTM-T6WJ92X",
