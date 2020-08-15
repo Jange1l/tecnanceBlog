@@ -3,7 +3,7 @@ template: BlogPost
 path: /Introduction
 date: 2020-07-01T12:12:25.364Z
 title: 'Welcome to Tecnance'
-thumbnail: /assets/Sky.jpg
+thumbnail: /assets/welcome.gif
 metaDescription: Introduction to Tecnance, the tech and finance blog for everyone.
 author: Juan Suarez
 ---

@@ -3,7 +3,7 @@ template: BlogPost
 path: /PutCreditSpreadStrategy
 date: 2020-07-13T12:12:25.364Z
 title: 'The Best way to trade Put Credit Spreads! '
-thumbnail: /assets/Sky.jpg
+thumbnail: /assets/analytics_image.jpeg
 metaDescription: Why Put Credit Spreads are the safest options strategy and the optimal way to trade them (at least this is what has worked for me)
 author: Juan Suarez
 ---

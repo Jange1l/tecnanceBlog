@@ -153,8 +153,9 @@ a {
   border: 1px solid green; /* Green border */
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
+  margin-bottom: 32px;
   a {
-    color: #888;
+    color:green;
     text-decoration: none;
     margin: 0 10px 0;
     &[aria-current] {

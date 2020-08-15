@@ -3,7 +3,7 @@ template: BlogPost
 path: /FintechInBrazil
 date: 2020-08-13T12:12:25.364Z
 title: 'The Future of Fintech in Brazil'
-thumbnail: /assets/Sky.jpg
+thumbnail: /assets/brazil_fintech.jpeg
 metaDescription: Brazil represents the world’s 9th largest economy, ahead of both Canada and Russia. It is predominant in size and population in Latin America, and its nominal GDP (gross domestic product) is of around $2 trillion. 
 author: Valentina Lopes Da Costa
 ---
