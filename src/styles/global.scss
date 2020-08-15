@@ -145,11 +145,44 @@ a {
   margin-bottom: 32px;
   align-items: center;
 }
+.site-navigation {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  justify-content: center;
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 10px 0;
+    &[aria-current] {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+    &:hover {
+      color: var(--primary-color);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 .site-title a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
+  font-size: large;
+}
+.site-button-navigator a {
+  color: #ff934f;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: medium;
+  
 }
 .hero-header {
   padding: 0 0 10px; // Change this to give space for banner ad in the future

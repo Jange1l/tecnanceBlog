@@ -23,7 +23,14 @@ export default ({ children }) => {
         </div>
         <Navigation />
       </header>
+      
+      <nav className="site-navigation">
+        <Link to="/" > Finance </Link>
+        <Link to="/indexEngineering" > Engineering </Link>
+      </nav>
+      
       {children}
+      
       <footer className="site-footer">
         <p>&copy; {new Date().getFullYear()} Tecnance &bull; by Juan Suarez </p>
       </footer>

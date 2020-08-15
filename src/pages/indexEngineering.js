@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 import HeroHeader from "../components/heroHeader"
 
-const IndexPage = ({
+const IndexEngineeringPage = ({
   data: {
     site,
     allMarkdownRemark: { edges },
@@ -23,7 +23,7 @@ const IndexPage = ({
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       <HeroHeader/>
-      <h2>Latest in tech and finance &darr;</h2>
+      <h2>Latest in Engineering &darr;</h2>
       <div className="grids">
         {Posts}
       </div>
@@ -31,29 +31,28 @@ const IndexPage = ({
   )
 }
 
-export default IndexPage
+export default IndexEngineeringPage
 export const pageQuery = graphql`
-  query indexPageQuery {
+query indexEngineeringPageQuery {
     site {
       siteMetadata {
         title
         description
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            thumbnail
-            author
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(data_engineering)/"}}, sort: { order: DESC, fields: [frontmatter___date] }) {
+        edges {
+            node {
+              id
+              excerpt(pruneLength: 250)
+              frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                path
+                title
+                thumbnail
+              }
+            }
           }
         }
       }
-    }
-  }
 `
