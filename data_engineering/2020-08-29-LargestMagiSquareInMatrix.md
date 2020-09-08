@@ -24,6 +24,12 @@ I am sure there are multiple ways to solve this problem more efficiently, but I 
 
 The solution that I came up with uses threads to find all squares of size k x k in the matrix of N x N. Then, it uses checks every sub-square of size k x k in the matrix. If the square is a Magic Square it's sum gets added to memory. At the end the program finds the largest sum that got saved, hence finding the largest Magic Square. 
 
+# How to use 
+
+At the bottom there are a few different matrices of different sizes. Feel free to play around with them to test different inputs. If you dont feel like manually changing the matrices, you can randomly generate a matrix of size N x N with mat4. 
+
+mat4 is already set up, all you need to do is specify the range of the numbers you want in the matrix and the size. Remember it has to be a square matrix, so choose equal numbers for the sizes. 
+
 ```python
 import logging
 import threading
