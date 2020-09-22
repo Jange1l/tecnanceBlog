@@ -2,13 +2,59 @@
 template: BlogPost
 path: /Sudoku2_problem 
 date: 2020-09-08T12:12:25.364Z
-title: 'Check that this is a valid sudoku board'
+title: 'Check the validity of a sudoku board'
 thumbnail: /assets/cpu.gif
 metaDescription: Solution for codesignal sudoku2 problem 
 author: Juan Suarez
 ---
 
+# Introduction
+
+I dont know when you might need to check if you have a valid sudoku board, but if you do here is one way to do it. 
+
+# The Problem
+
+Given a typical 9x9 sudoku board, check if it violates any of the rules or if it is a valid board arrangement. The rules are as follows: 
+
+- Each row contains NOT more than one of the same number from 1 to 9
+- Each column contains NOT more than one of the same number from 1 to 9
+- Each 3x3 grid contains NOT more than one of the same number from 1 to 9
+
+# The Solution
+
+Below I implemented a brute force approach that checks all of the above conditions to see if we have a valid sudoku board or not. First we check the all columns in the grid, then we check all the rows, and finally we check all the 3x3 subgrids. 
+
+
+# How to use 
+
+To test this code simply create a 9x9 matrix representing a sudoku grid with different types of inputs. 
+
+
 ```python
+
+# Sample boards to try out 
+
+#VALID BOARD
+board = [[1, 4, 7, 0, 0, 0, 0, 0, 3],
+        [2, 5, 0, 0, 0, 1, 0, 0, 0],
+        [3, 0, 9, 0, 0, 0, 0, 0, 0],
+        [0, 8, 0, 0, 2, 0, 0, 0, 4],
+        [0, 0, 0, 4, 1, 0, 0, 2, 0],
+        [9, 0, 0, 0, 0, 0, 6, 0, 0],
+        [0, 0, 3, 0, 0, 0, 0, 0, 9],
+        [4, 0, 0, 0, 0, 2, 0, 0, 0],
+        [0, 0, 1, 0, 0, 8, 0, 0, 7]]
+#INVALID BOARD 
+board2 = [[1, 4, 4, 0, 0, 0, 0, 0, 3],
+         [2, 5, 0, 0, 0, 1, 0, 0, 0],
+         [3, 0, 9, 0, 0, 0, 0, 0, 0],
+         [0, 8, 0, 0, 2, 0, 0, 0, 4],
+         [0, 0, 0, 4, 1, 0, 0, 2, 0],
+         [9, 0, 0, 0, 0, 0, 6, 0, 0],
+         [0, 0, 3, 0, 0, 0, 0, 0, 9],
+         [4, 0, 0, 0, 0, 2, 0, 0, 0],
+         [0, 0, 1, 0, 0, 8, 0, 0, 7]]
+
 def sudoku2(grid):
     
     # Check all columns 
