@@ -3,7 +3,7 @@ template: BlogPost
 path: /Sudoku2_problem 
 date: 2020-09-08T12:12:25.364Z
 title: 'Check the validity of a sudoku board'
-thumbnail: /assets/cpu.gif
+thumbnail: /assets/sudoku_lights.gif
 metaDescription: Solution for codesignal sudoku2 problem 
 author: Juan Suarez
 ---

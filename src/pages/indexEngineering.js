@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 import HeroHeader from "../components/heroHeader"
 
+// <script data-ad-client="ca-pub-8266137982439267" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 const IndexEngineeringPage = ({
   data: {
     site,
@@ -50,6 +52,7 @@ query indexEngineeringPageQuery {
                 path
                 title
                 thumbnail
+                author
               }
             }
           }
