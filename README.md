@@ -1,7 +1,7 @@
 # Tecnance 
 
-https://www.tecnance.com/
-The tech and finance blog for everyone! 
+* https://www.tecnance.com/
+* The tech and finance blog for everyone! 
 
 ## Tech stack 
 
